@@ -92,11 +92,34 @@ deleteOne ("Let's try that out", false)
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
+const isThisAnEmail = function (testedString) {
+    if (testedString.includes ("@" && ".") === true) {
+        console.log("This is correct e-mail adres")}
+        else {
+            console.log ("Something is wrong")
+        }}
+        isThisAnEmail ("magda.kolaniak@gmail.com")
+
+    
 
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
+const whatDayIsIt= function() {
+    let n = new Date ()
+let numberOfDay = n.getDay()
 
+    switch (numberOfDay){
+        case 1: console.log ("Today is Monday"); break
+        case 2: console.log ("Today is Tuesday"); break
+        case 3: console.log ("Today is Wednesday"); break
+        case 4: console.log ("Today is Thursday"); break
+        case 5: console.log ("Today is Friday"); break
+        case 6: console.log ("Today is Saturday"); break
+        case 7: console.log ("Today is Sunday"); break
+} }
+
+whatDayIsIt()
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
@@ -115,7 +138,17 @@ deleteOne ("Let's try that out", false)
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
-
+const isTodayMyBirthday = function () {
+    let day = new Date().getDate ();
+    let month = new Date().getMonth ();
+    if (day===15 && month===6) {
+        console.log (true)}
+        else {
+            console.log (false)
+        }
+    }
+    
+    isTodayMyBirthday()
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
 
