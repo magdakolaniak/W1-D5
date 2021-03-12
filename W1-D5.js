@@ -20,53 +20,32 @@ let test = "This is a string"
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
 let result = 10 + 20
-let sum = result
-
+ let sum = result
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
 let random = Math.floor(Math.random () * 20) 
-console.log(random)
+ console.log(random)
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
 let me = {}
-me = { name: "Magdalena",
-surname: "Kolaniak",
-age: 29,
-}
+ me = { name: "Magdalena",
+ surname: "Kolaniak",
+ age: 29,
+ }
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
-let me = {}
-me = { name: "Magdalena",
-surname: "Kolaniak",
-age: 29,
-}
 delete me.age
-
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
-let me = {}
-me = { name: "Magdalena",
-surname: "Kolaniak",
-age: 29,
-}
-delete me.age
 me.skills = ["JavaScript", "HTML", "CSS"]
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
-let me = {}
-me = { name: "Magdalena",
-surname: "Kolaniak",
-age: 29,
-}
-delete me.age
-me.skills = ["JavaScript", "HTML", "CSS"]
 me.skills.pop()
-
 // JS Functions
 /* Ex.1
     Write a function called "dice"; it should randomize an integer number between 1 and 6.
@@ -75,12 +54,24 @@ me.skills.pop()
 /* Ex.2 
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
-
+const whoIsBigger = function (n1, n2) {
+    if (n1>n2) {
+        console.log (n1)}
+        else {
+            console.log(n2)
+        }
+    }
+    
+    whoIsBigger (50,30)
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
-
+const splitMe = function (givenArray) {
+    let splitted = givenArray.split(" ")
+    console.log(splitted)}
+    
+    splitMe ("It should work")
 /* Ex.4
     Write a function called "deleteOne" which receives a string and a boolean as parameters. If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
