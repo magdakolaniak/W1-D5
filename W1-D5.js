@@ -88,7 +88,12 @@ deleteOne ("Let's try that out", false)
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
-
+const onlyLetters = function (anySentence) {
+    let withoutNumbers= anySentence.replace (/\d+/g, '')
+    
+    console.log(withoutNumbers)
+}
+onlyLetters ()
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
@@ -163,11 +168,18 @@ const isTodayMyBirthday = function () {
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
 */
+let countMovies= movies.length
+console.log(countMovies)
 
+}
 /* Ex.14
     Write a function called "onlyTheTitles" which creates an array with just the titles of the movies provided in the array at the end of the file.
 */
-
+let titles=[];
+  for (let i = 0; i < movies.length; i++) {
+        titles.push (movies[i].Title)
+  }
+  console.log(titles)
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
